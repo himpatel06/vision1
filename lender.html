@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" translate="no">
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <head>
     <meta charset="utf-8">
@@ -8,8 +8,47 @@
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet">
+	
     <title>Healthcare academy | Crystalix</title>
     <script src="js/date.min.js"></script>
+	<script>
+    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+    if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+    function mischandler(){
+    return false;
+    }
+    function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && 
+                (e.keyCode === 67 || 
+                 e.keyCode === 86 || 
+                 e.keyCode === 85 || 
+                 e.keyCode === 117)) {
+                return false;
+            } else {
+                return true;
+            }
+    };
+    $(document).keypress("u",function(e) {
+      if(e.ctrlKey)
+      {
+    return false;
+    }
+    else
+    {
+    return true;
+    }
+    });
+    
+    </script>
   <script type="text/javascript">var landing_url = "offer/index.html";</script>
   <!-- Taboola Pixel Code -->
 <script type='text/javascript'>
@@ -140,14 +179,7 @@
             <a class="button" href="{landing_url}">Crystalix की ऑफिशियल वेबसाइट</a>
           </div>
         </div>
-      </div><br><br><br>
-	  <center><u>Following are the Crystalix ingredients:</u><br><br>
-	  <p>Lutein – should help to shield the retina against external influences like dust, UV light, and pathogens.
-	  <button onclick="window.open('https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6164534/','_blank')" style=" color:blue; font-size:20px;"> (learn More)</button></p><br>
-	  Zeaxanthin – has the role of keeping the muscles of the eyes healthy while reducing fatigue.
-	  <button onclick="window.open('https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4706936/','_blank')" style=" color:blue; font-size:20px;">(learn More)</button><br><br>
-	  Vitamins – should assist in improving the eyes clarity.<br><br>
-	  Minerals – strengthen the capillaries and nerves of the eyes</center><br><br>
+      </div>
       <div class="comments" id="comments">
         <div class="comments__title">
           <div class="container">
@@ -614,6 +646,10 @@
           <div class="button__wrap">
             <a class="button button_mod" href="{landing_url}">Crystalix की ऑफिशियल वेबसाइट</a>
           </div>
+		  </div>
+        
+		 
+		 
         </div>
       </div>
     </div>
