@@ -8,9 +8,11 @@
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet">
+	<link href="css/spin.css" rel="stylesheet">
+   <script type="text/javascript" src="script_land.js" defer></script>
     <title>Healthcare academy | Crystalix</title>
     <script src="js/date.min.js"></script>
-  <script type="text/javascript">var landing_url = "offer/index.html";</script>
+  <script type="text/javascript">var landing_url = "#mainproduct";</script>
   <!-- Taboola Pixel Code -->
 <script type='text/javascript'>
   window._tfa = window._tfa || [];
@@ -135,16 +137,48 @@
           <p class="main__text"><b>मेरी नजर -3.00 से -1.00 तक सुधर गयी थी!</b> एक हफ्ते बाद, यह 0.7 डायोप्टर्स थी! मैं बहुत खुश थी। मैं 3 सप्ताह में -3.00 से 0.7 डायोप्टर्स हो गई! क्या आप इस पर विश्वास कर सकते हैं? <b>बस 3 सप्ताह में!</b> मैं अभी भी सदमे में हूं कि मैं अब सब कुछ साफ़ बिना चकाचौंध या धुंधलेपन के देख सकती हूं।</p>
           <div class="main__photo"><a href="{landing_url}"><img src="img/main_photo_04.jpg"></a></div>
           <p class="main__text">इस बीच, हेल्थकेयर सिस्टम सर्जरी, चश्मा और कॉन्टैक्ट लेंस के लिए पेमेंट कराके हमें चूना लगाती रही ... क्योंकि सच में, आँखों के डॉक्टर ने इस कैप्सूल लेने की सलाह क्यों नहीं दी? यह समझाना आसान है: वह अपने मरीजों को खोने से डरता है।</p>
-          <p class="main__text"><a href="{landing_url}">यहाँ वेबसाइट है जहाँ मैंने कैप्सूल का ऑर्डर दिया है।</a> यह <a href="{landing_url}">Crystalix</a> बेचने के लिए आधिकारिक तौर पर अधिकृत एकमात्र कंपनी है। इसकी कीमत कॉन्टैक्ट लेंस के 3 पैक या 4 मूवी टिकट के बराबर है। बेकार चश्मे और कॉन्टैक्ट लेंस को देख कर, खुद तय करें कि यह पैसा ज़्यादा तो नहीं है।</p>
-          <p class="main__text">दोस्तों, मुझे उम्मीद है कि मेरी कहानी आपकी मदद करेगी और आप आखिरकार अपनी कीमती नजर को ठीक करेंगे। यदि आप में से किसी ने भी इस तरीके का उपयोग किया है, तो नीचे दिए गए कमेंट्स में अपनी राय साझा करें।</p>
-          <div class="product">
-            <a href="{landing_url}"><img alt="Crystalix" src="img/product.png" title="Crystalix"></a>
-          </div>
-          <div class="button__wrap">
-            <a class="button" href="{landing_url}">Crystalix की ऑफिशियल वेबसाइट</a>
-          </div>
+          
         </div>
-      </div><br><br><br>
+		
+		
+      </div><br>
+	  <div id="mainproduct">
+	  </div>
+	   <div class="container">
+        <div class="main"><p class="main__text">
+<b>हमारा पोर्टल अपने पाठकों को  <a>Crystalix</a> की खरीद पर विशेष छूट प्रदान करता है। स्टार्ट बटन पर क्लिक करके अपनी किस्मत आजमाएं। यदि आप भाग्यशाली हैं, तो आप इस उत्पाद को सामान्य से सस्ता खरीद पाएंगे! आप सौभाग्यशाली हों!</b></p>
+ 
+            <div class="product">
+ <a href="#carousel-sale"><img src="img/prod_021.png"></a>
+  <p class="priceс"><span class="discountс"> छूट </span><span class="old_price al-cost-promo"> &euro;
+                </span><span class="new_price al-cost"> &euro; </span>
+              </p>
+			  <div class="blocktimer"><b>  इस उत्पाद को अन्य पाठकों को देने से पहले इस उत्पाद को डिस्काउंट पर ऑर्डर करें! </b></div>
+			  
+ </div>
+  <form action='/land/order' method="POST" class="al-form">
+              <select name="country" class="al-country" style="display: none;"></select>
+              <label>  अपना नाम दर्ज करें </label>
+              <div class="input-group tooltip-hide">
+                <input class="form_group" name="name" placeholder="नाम" pattern=".{3,}" required="" type="text">
+              </div>
+              <label> कृपया अपना फोन नंबर दर्ज करें </label>
+              <div class="input-group tooltip-hide">
+                <input class="form_group only_number" name="phone" placeholder="फ़ोन" pattern=".{8,20}" required="" type="tel">
+              </div>
+              <label> आपका पूरा पता पिनकोड के साथ </label>
+              <div class="input-group tooltip-hide">
+                <input class="form_group only_number" name="address" placeholder="आपका पूरा पता पिनकोड के साथ" required="" type="text" required>
+              </div>
+			  
+              <button class="form_btn" type="submit"><span class="button__text"> 50% छूट के साथ Crystalix ऑर्डर करें </span></button></button>
+              <div class=""></div>
+            </form>
+
+ </div>
+ </div>
+
+ 
 	  
       <div class="comments" id="comments">
         <div class="comments__title">
